@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7f4-ML-8bm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gVV-jP-3bt">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -335,9 +335,6 @@
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" name="BalooChettan-Regular" family="Baloo Chettan" pointSize="32"/>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="JNv-vo-suL" kind="presentation" modalPresentationStyle="fullScreen" id="bHR-sk-FDC"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxz-ib-XM1">
                                         <rect key="frame" x="0.0" y="298" width="301" height="114"/>
@@ -367,6 +364,7 @@
                             <constraint firstItem="2gd-DX-eRn" firstAttribute="centerX" secondItem="i9f-bu-McC" secondAttribute="centerX" id="vGO-hk-Cuv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Q4m-9n-YkY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUS-66-IyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -375,6 +373,7 @@
         <!--View Controller-->
         <scene sceneID="oS4-Rh-6Pv">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jQ-Ri-iZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="JNv-vo-suL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NF6-an-Rtp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -462,9 +461,6 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" name="Primary Color"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="6WF-YQ-dKi" kind="presentation" modalPresentationStyle="fullScreen" id="i2U-l3-GHd"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-ec-W3W">
                                                 <rect key="frame" x="150" y="0.0" width="100" height="50"/>
@@ -474,9 +470,6 @@
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" name="Primary Color"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="HnJ-Wn-RMZ" kind="presentation" modalPresentationStyle="fullScreen" id="pPw-NP-A7R"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -501,9 +494,8 @@
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6jQ-Ri-iZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3506" y="95"/>
+            <point key="canvasLocation" x="5520" y="1059"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HYd-LY-Tu9">
@@ -794,7 +786,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.right" catalog="system" title=""/>
                                 <connections>
-                                    <segue destination="6WF-YQ-dKi" kind="presentation" modalPresentationStyle="fullScreen" id="DqG-b8-zWo"/>
+                                    <segue destination="6WF-YQ-dKi" kind="show" id="9la-Gr-Yj8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -862,7 +854,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Pl2-WZ-o3c">
-                                                        <rect key="frame" x="28" y="31.666666666666657" width="302.66666666666669" height="20.333333333333329"/>
+                                                        <rect key="frame" x="28.333333333333343" y="31.666666666666657" width="302.33333333333326" height="20.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVE-Y5-wnw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="20.333333333333332"/>
@@ -870,14 +862,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00-13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r12-DP-x4S">
-                                                                <rect key="frame" x="106" y="0.0" width="94.666666666666686" height="20.333333333333332"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00-12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r12-DP-x4S">
+                                                                <rect key="frame" x="106" y="0.0" width="94.333333333333314" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-re-XL3">
-                                                                <rect key="frame" x="278.66666666666663" y="0.0" width="24" height="20.333333333333332"/>
+                                                                <rect key="frame" x="278.33333333333331" y="0.0" width="24" height="20.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -908,7 +900,7 @@
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="LVy-Mu-ry7" kind="presentation" id="lpg-eE-fRK"/>
+                                                            <segue destination="7f4-ML-8bm" kind="show" id="Yyz-sF-ujq"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -970,7 +962,7 @@
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <segue destination="LVy-Mu-ry7" kind="presentation" id="dje-2X-I0o"/>
+                                                            <segue destination="7f4-ML-8bm" kind="showDetail" id="Gky-By-3L6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1031,9 +1023,6 @@
                                                         <buttonConfiguration key="configuration" style="plain" image="plus.app.fill" catalog="system" title="">
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                         </buttonConfiguration>
-                                                        <connections>
-                                                            <segue destination="LVy-Mu-ry7" kind="presentation" id="gpC-8o-wXb"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -1063,18 +1052,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhA-Ga-GxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3506" y="848"/>
+            <point key="canvasLocation" x="3555" y="95"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6VL-81-6Dm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYW-Bi-bfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="LVy-Mu-ry7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMv-x3-wlX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-ox-KvC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NIq-cf-zPx">
                                         <rect key="frame" x="32" y="67" width="350" height="350"/>
@@ -1151,9 +1141,6 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" name="Primary Color"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="3Qy-0Y-nVF" kind="presentation" modalPresentationStyle="fullScreen" id="vi4-Kq-a8B"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-Ct-po1">
                                                 <rect key="frame" x="150" y="0.0" width="100" height="50"/>
@@ -1163,9 +1150,6 @@
                                                 <state key="normal" title="Save">
                                                     <color key="titleColor" name="Primary Color"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="6WF-YQ-dKi" kind="presentation" modalPresentationStyle="fullScreen" id="mPk-QX-V2t"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1190,9 +1174,8 @@
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PYW-Bi-bfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4468" y="95"/>
+            <point key="canvasLocation" x="5919" y="1059"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6MX-Nk-4Dp">
@@ -1410,6 +1393,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" image="plus.app.fill" catalog="system" title="">
                                                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="7f4-ML-8bm" kind="show" id="TBp-b0-uPB"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1431,6 +1417,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" image="plus.app.fill" catalog="system" title="">
                                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="7f4-ML-8bm" kind="show" id="c1Z-jX-KeQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.7602482438" blue="0.45198273659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1561,11 +1550,11 @@
             <objects>
                 <viewController id="7f4-ML-8bm" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mr4-Oh-xjR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6p0-3i-zw4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MbU-Qh-lEZ">
                                         <rect key="frame" x="32" y="67" width="350" height="350"/>
@@ -1598,7 +1587,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mwG-Vs-0BP">
-                                        <rect key="frame" x="82" y="483" width="250" height="50"/>
+                                        <rect key="frame" x="82" y="463" width="250" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xo-S6-8rY">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
@@ -1612,6 +1601,9 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" name="Primary Color"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="6WF-YQ-dKi" kind="show" id="4Ur-fy-kkP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOy-4X-gDt">
                                                 <rect key="frame" x="150" y="0.0" width="100" height="50"/>
@@ -1643,6 +1635,7 @@
                             <constraint firstItem="4J5-5w-XVR" firstAttribute="bottom" secondItem="6p0-3i-zw4" secondAttribute="bottom" id="xPA-zJ-KVQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Tdc-Nt-FVY"/>
                     <connections>
                         <outlet property="lblTime" destination="vSQ-U2-ieh" id="RpR-ne-PJL"/>
                         <outlet property="pickerView" destination="mUZ-6g-3LF" id="S3O-tQ-eMr"/>
@@ -1654,11 +1647,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MJ5-iL-kd8"/>
-        <segue reference="gpC-8o-wXb"/>
-        <segue reference="vi4-Kq-a8B"/>
-        <segue reference="D61-Ca-WIf"/>
-        <segue reference="DqG-b8-zWo"/>
+        <segue reference="Gky-By-3L6"/>
+        <segue reference="oy1-xR-cbk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.circle" catalog="system" width="128" height="121"/>

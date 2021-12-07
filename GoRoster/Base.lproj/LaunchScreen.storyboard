@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alata-regular.ttf">
+            <string>Alata-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ow1-lI-Ce7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoRoster_calendar_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zFQ-4O-dga">
+                                        <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoRoster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koV-HT-9Lu">
+                                        <rect key="frame" x="154.66666666666666" y="512" width="104.99999999999997" height="34.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="Alata-Regular" family="Alata" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Copy 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-Zf-XmD">
+                                        <rect key="frame" x="165.66666666666666" y="690" width="83" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Primary Color"/>
+                                <constraints>
+                                    <constraint firstItem="koV-HT-9Lu" firstAttribute="centerX" secondItem="Ow1-lI-Ce7" secondAttribute="centerX" id="Djs-eC-a4H"/>
+                                    <constraint firstItem="zFQ-4O-dga" firstAttribute="centerX" secondItem="Ow1-lI-Ce7" secondAttribute="centerX" id="Ghg-zx-6z5"/>
+                                    <constraint firstItem="zFQ-4O-dga" firstAttribute="centerY" secondItem="Ow1-lI-Ce7" secondAttribute="centerY" id="aKo-11-8iv"/>
+                                    <constraint firstItem="koV-HT-9Lu" firstAttribute="top" secondItem="zFQ-4O-dga" secondAttribute="bottom" constant="44" id="aoW-x6-aVh"/>
+                                    <constraint firstItem="LbQ-Zf-XmD" firstAttribute="centerX" secondItem="Ow1-lI-Ce7" secondAttribute="centerX" id="isP-ng-SID"/>
+                                    <constraint firstAttribute="bottom" secondItem="LbQ-Zf-XmD" secondAttribute="bottom" constant="25" id="z6A-ao-gHc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ow1-lI-Ce7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8Sv-Pg-fq0"/>
+                            <constraint firstItem="Ow1-lI-Ce7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bth-w4-eNT"/>
+                            <constraint firstItem="Ow1-lI-Ce7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="H7O-Bp-R8N"/>
+                            <constraint firstItem="Ow1-lI-Ce7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ujR-tA-6Ju"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoRoster_calendar_logo" width="200" height="200"/>
+        <namedColor name="Primary Color">
+            <color red="0.96078431372549022" green="0.95686274509803926" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

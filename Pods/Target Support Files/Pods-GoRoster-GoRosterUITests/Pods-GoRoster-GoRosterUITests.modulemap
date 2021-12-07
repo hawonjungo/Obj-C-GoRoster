@@ -1,0 +1,6 @@
+framework module Pods_GoRoster_GoRosterUITests {
+  umbrella header "Pods-GoRoster-GoRosterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
